@@ -1,1 +1,3 @@
 *.user.js linguist-language=JavaScript
+*.user.js linguist-generated=false
+*.user.js linguist-detectable=true
