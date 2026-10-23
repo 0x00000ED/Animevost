@@ -1032,7 +1032,7 @@ div.ca-nav-next img {
                 yammy.href = "#";
                 yammy.textContent = "Yammy";
 
-                yammy.style.width = "150px";
+                //yammy.style.width = "60px";
 
                 yammy.dataset.name = name;
 
