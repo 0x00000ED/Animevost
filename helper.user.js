@@ -704,6 +704,8 @@ div.ca-nav-next img {
         if(topnav) {
             document.querySelector(".topLine").remove();
 
+            document.querySelector("#wrap").style.margin = 0;
+
             addElement("style", "div#wrap div.menu > ul > li > a{ padding: 14px 8px 0px 9px;!important }", document.head, false);
 
             let li = document.createElement('li');
