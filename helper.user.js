@@ -1006,7 +1006,7 @@ div.ca-nav-next img {
     }
     Anidub_o_O();
 
-    function yammi()
+    function yummy()
     {
         const shortstorys = document.querySelectorAll(".shortstory");
         if(shortstorys.length)
@@ -1030,17 +1030,17 @@ div.ca-nav-next img {
 
                 const form = shortstory.querySelector(".shortstoryFuter form");
 
-                const yammy = document.createElement("a");
-                yammy.href = "#";
-                yammy.textContent = "Yammy";
+                const yummy = document.createElement("a");
+                yummy.href = "#";
+                yummy.textContent = "Yummy";
 
-                //yammy.style.width = "60px";
+                //yummy.style.width = "60px";
 
-                yammy.dataset.name = name;
+                yummy.dataset.name = name;
 
-                form.prepend(yammy);
+                form.prepend(yummy);
 
-                yammy.addEventListener("click", async function(event) {
+                yummy.addEventListener("click", async function(event) {
                     event.preventDefault();
 
                     const animeName = event.currentTarget.dataset.name;
@@ -1052,12 +1052,15 @@ div.ca-nav-next img {
 
                     const json = (await response.json()).response[0];
 
-                    window.location.href = `https://ru.yummyani.me/catalog/item/${json.anime_url}`;
+                    const animeurl = `https://ru.yummyani.me/catalog/item/${json.anime_url}`;
+
+                    //window.location.href = animeurl;
+                    window.open(animeurl, '_blank');
                 });
             }
         }
     }
-    yammi();
+    yummy();
 };
 
 let onComplete = function()
